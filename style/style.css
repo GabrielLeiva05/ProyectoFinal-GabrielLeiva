@@ -203,7 +203,6 @@
             rgba(0, 21, 255, 0.567),
             rgba(0, 21, 255, 0.567)
         )
-        ,url("media/front-end.jpg");
     }
     
     .tarjeta:nth-child(2){
@@ -212,7 +211,6 @@
             rgba(0, 21, 255, 0.567),
             rgba(0, 21, 255, 0.567)
         )
-        ,url("media/full-stack.jpg");
     }
     
     .tarjeta:nth-child(3){
@@ -221,7 +219,6 @@
             rgba(0, 21, 255, 0.567),
             rgba(0, 21, 255, 0.567)
         )
-        ,url("media/python.jpg");
     
     }
 
