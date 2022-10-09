@@ -1,0 +1,95 @@
+#obras-sociales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/shutterstock_106052774.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h1{
+        color: white;
+        button{
+            font-size: 1em;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+#obras-sociales-2{
+    h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        background-color: #4E76F6;
+        color: #fff;
+        padding: 20px;
+        font-size: 1em;
+        img{
+            padding: 20px;
+        }
+    }
+} 
+
+.img-obra-social{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media (min-width: 650px){
+    #obras-sociales{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 80vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/shutterstock_106052774.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        button{
+            font-size: 1.75em;
+        }
+    }
+}
+
+@media (min-width: 880px){
+    #obras-sociales-2{
+        h2{
+            display: flex;
+            justify-content: center;
+            margin-top: 2em;
+            background-color: #4E76F6;
+            color: #fff;
+            padding: 20px;
+            font-size: 1.6em;
+        }
+    }
+    .img-obra-social{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        padding: 10px;
+        margin: 10px;
+        grid-auto-rows: 200px;
+    }
+}

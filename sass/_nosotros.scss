@@ -1,0 +1,87 @@
+#nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/lentesDeSol.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h1{
+        color: white;
+        button{
+            font-size: 1em;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+#nosotros-texto{
+    h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        background-color: $colorIlusion;
+        color: #fff;
+        padding: 20px;
+        p{
+            display: flex;
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+} 
+
+@media (min-width: 650px){
+    #nosotros{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/lentesDeSol.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        button{
+            font-size: 1.75em;
+        }
+    }
+    #nosotros-texto{
+        p{
+            display: flex;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    } 
+}
+
+@media (min-width: 880px){
+    #nosotros-texto{
+        p{
+            display: flex;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 110px;
+            margin-right: 110px;
+        }
+    } 
+}

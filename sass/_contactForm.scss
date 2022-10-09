@@ -1,0 +1,24 @@
+.form-check-label{
+    margin-right: 17px;
+    margin-left: 4px;
+}
+
+#form4Example4{
+    margin-left: 6px;
+}
+
+@media (min-width: 425px){
+    .form-check-label{
+        margin-right: 5px;
+    }
+    
+    #form4Example4{
+        margin-left: 6px;
+    }
+}
+
+@media (min-width: 650px){
+    #form4Example4{
+        margin-left: 8px;
+    }
+}
