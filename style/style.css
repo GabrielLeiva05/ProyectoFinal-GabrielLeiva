@@ -129,7 +129,7 @@ header a:hover{
 }
 
 #hero button{
-    font-size: 1.3em;
+    font-size: 1em;
     text-decoration: none;
 }
 
@@ -140,7 +140,7 @@ button a{
 
 .section-dos{
     text-align: center;
-    padding: 70px 42px;
+    padding: 70px 26px;
     height: 55vh;
     background-image: linear-gradient(
         0deg,
@@ -245,7 +245,7 @@ button a{
 }
     
 #products button{
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 #products a{
@@ -276,7 +276,7 @@ button a{
 }
 
 #nosotros button{
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 #nosotros a{
@@ -299,8 +299,13 @@ button a{
     margin-top: 50px;
 }
 
-#form4Example4{
+.form-check-label{
+    margin-right: 17px;
     margin-left: 4px;
+}
+
+#form4Example4{
+    margin-left: 6px;
 }
 
 #contacto{
@@ -325,7 +330,7 @@ button a{
 }
 
 #contacto button{
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 #contacto a{
@@ -382,7 +387,7 @@ button a{
 }
 
 #obras-sociales button{
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 #obras-sociales a{
@@ -412,289 +417,323 @@ button a{
     margin: 10px;
 }
 
-@media (min-width: 425px)
-{
-.tarjeta:first-child{
-    background-image: linear-gradient(
-    0deg,
-    rgba(0, 21, 255, 0.567),
-    rgba(0, 21, 255, 0.567)
-    )
-}
-
-.tarjeta:nth-child(2){
-    background-image: linear-gradient(
-    0deg,
-    rgba(0, 21, 255, 0.567),
-    rgba(0, 21, 255, 0.567)
-    )
-}
-.tarjeta:nth-child(3){
-    background-image: linear-gradient(
-    0deg,
-    rgba(0, 21, 255, 0.567),
-    rgba(0, 21, 255, 0.567)
-    )
+@media (min-width: 425px){
+    .tarjeta:first-child{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 21, 255, 0.567),
+        rgba(0, 21, 255, 0.567)
+        )
+    }
     
-}
-.tarjeta{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 15px;
-}
-
-.tarjeta img{
-    height: 250px;
-    width: 250px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    .tarjeta:nth-child(2){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 21, 255, 0.567),
+        rgba(0, 21, 255, 0.567)
+        )
+    }
+    .tarjeta:nth-child(3){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 21, 255, 0.567),
+        rgba(0, 21, 255, 0.567)
+        )
+        
+    }
+    .tarjeta{
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;
+        margin: 30px;
+        border-radius: 15px;
+    }
     
+    .tarjeta img{
+        height: 250px;
+        width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .form-check-label{
+        margin-right: 5px;
+    }
+    
+    #form4Example4{
+        margin-left: 6px;
+    }
 }
 
-}
-
-@media (min-width: 650px)
-{
-header{
-    position: relative;
-    width: 100%;
-}
-
-header .container{
+@media (min-width: 650px){
+    header{
+        position: relative;
+        width: 100%;
+    }
+    
+    header .container{
+            flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header nav{
         flex-direction: row;
-    justify-content: space-between;
-}
-
-header nav{
-    flex-direction: row;
-    padding-bottom: 0;
-    padding-right: 20px;
-}
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+        
+    header li{
+        display: inline-block;
+    }
+        
+    header a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        
+    #hero h1{
+        font-size: 5em;
+    }
     
-header li{
-    display: inline-block;
-}
+    #hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/mujerconlentes.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
     
-header a{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    .section-dos{
+        text-align: center;
+        padding: 200px 12px;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/genteconlentes.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: #fff;
+        margin-top: 6em;
+    }
     
-#hero h1{
-    font-size: 5em;
-}
-
-#hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: linear-gradient(
+    .wppImg{
+        height: 89px;
+        width: 89px;
+    }
+    
+    .wpp-icon{
+        float: right;
+        position: sticky;
+        top: 30px;
+        bottom: 30px;
+        margin-top: 300px;
+    }
+    
+    #products{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    )
-    ,url("../img/mujerconlentes.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.section-dos{
-    text-align: center;
-    padding: 200px 12px;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../img/genteconlentes.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    margin-top: 6em;
-}
-
-.wppImg{
-    height: 89px;
-    width: 89px;
-}
-
-.wpp-icon{
-    float: right;
-    position: sticky;
-    top: 30px;
-    bottom: 30px;
-    margin-top: 300px;
-}
-
-#products{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 100vh;
-    background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-    )
-    ,url("../img/mujerconlentes.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#form4Example4{
-    margin-left: 8px;
-}
-
-.tarjeta:first-child{
-    background-image: linear-gradient(
-    0deg,
-    rgba(0, 21, 255, 0.567),
-    rgba(0, 21, 255, 0.567)
-    )
-}
-
-.tarjeta:nth-child(2){
-    background-image: linear-gradient(
-    0deg,
-    rgba(0, 21, 255, 0.567),
-    rgba(0, 21, 255, 0.567)
-    )
-}
-.tarjeta:nth-child(3){
-    background-image: linear-gradient(
-    0deg,
-    rgba(0, 21, 255, 0.567),
-    rgba(0, 21, 255, 0.567)
-    )
+        )
+        ,url("../img/mujerconlentes.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
     
-}
-.tarjeta{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 15px;
-}
-
-.tarjeta img{
-    height: 350px;
-    width: 350px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    #form4Example4{
+        margin-left: 8px;
+    }
     
-}
-
-h1{ font-size: 3.5em;
-
-}
-
-#hero h1{
-    color: white;
-}
-
-#hero button{
-    font-size: 1.75em;
-    text-decoration: none;
-}
-
-button a{
-    text-decoration: none;
-    color: #fff;
-}
-
-#hero button{
-    font-size: 1.75em;
-    text-decoration: none;
-}
-
-#products button{
-    font-size: 1.75em;
-}
-
-#contacto button{
-    font-size: 1.75em;
-}
-
-#nosotros button{
-    font-size: 1.75em;
-}
-
-#nosotros{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 100vh;
-    background-image: linear-gradient(
+    .tarjeta:first-child{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 21, 255, 0.567),
+        rgba(0, 21, 255, 0.567)
+        )
+    }
+    
+    .tarjeta:nth-child(2){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 21, 255, 0.567),
+        rgba(0, 21, 255, 0.567)
+        )
+    }
+    .tarjeta:nth-child(3){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 21, 255, 0.567),
+        rgba(0, 21, 255, 0.567)
+        )
+        
+    }
+    .tarjeta{
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;
+        margin: 30px;
+        border-radius: 15px;
+    }
+    
+    .tarjeta img{
+        height: 350px;
+        width: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    h1{ font-size: 3.5em;
+    
+    }
+    
+    #hero h1{
+        color: white;
+    }
+    
+    #hero button{
+        font-size: 1.75em;
+        text-decoration: none;
+    }
+    
+    button a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    #hero button{
+        font-size: 1.75em;
+        text-decoration: none;
+    }
+    
+    #products button{
+        font-size: 1.75em;
+    }
+    
+    #contacto button{
+        font-size: 1.75em;
+    }
+    
+    #nosotros button{
+        font-size: 1.75em;
+    }
+    
+    #nosotros{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/lentesDeSol.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    #nosotros-texto p{
+        display: flex;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    #contacto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    )
-    ,url("../img/lentesDeSol.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+        )
+        ,url("../img/pareja-lentes.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    #obras-sociales{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 80vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../img/shutterstock_106052774.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    #obras-sociales button{
+        font-size: 1.75em;
+    }
 }
 
-#contacto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 100vh;
-    background-image: linear-gradient(
-    0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-    )
-    ,url("../img/pareja-lentes.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#obras-sociales{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 80vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../img/shutterstock_106052774.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-}
-
-@media (min-width: 768px)
-{
-.img-obra-social{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-    padding: 10px;
-    margin: 10px;
-    grid-auto-rows: 200px;
-}
+@media (min-width: 880px){
+    .img-obra-social{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        padding: 10px;
+        margin: 10px;
+        grid-auto-rows: 200px;
+    }
+    
+    #obras-sociales-2 h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        background-color: #4E76F6;
+        color: #fff;
+        padding: 20px;
+        font-size: 1.6em;
+    }
+    
+    #nosotros-texto p{
+        display: flex;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 110px;
+        margin-right: 110px;
+    }
 }
